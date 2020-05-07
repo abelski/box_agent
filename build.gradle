@@ -1,0 +1,69 @@
+plugins {
+    id 'org.springframework.boot' version '2.0.1.RELEASE'
+    id "io.spring.dependency-management" version "1.0.4.RELEASE"
+    id 'groovy-base'
+}
+
+apply plugin: 'org.springframework.boot'
+apply plugin: 'war'
+apply plugin: 'io.spring.dependency-management'
+
+sourceCompatibility = 11
+targetCompatibility = 11
+
+// Copy resources into the jar as static content, where Spring expects it.
+sourceSets {
+    main {
+        resources {
+            srcDirs "src/main/resources", "src/main/webapp"
+        }
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+compileJava.options.encoding = "UTF-8"
+ext['groovy.version'] = '2.5.9'
+
+dependencies {
+
+//    compile group: 'org.springframework.social', name: 'spring-social-core', version: '1.1.6.RELEASE'
+//    compile group: 'org.springframework.social', name: 'spring-social-config', version: '1.1.6.RELEASE'
+//    compile group: 'org.springframework.social', name: 'spring-social-web', version: '1.1.6.RELEASE'
+//    compile group: 'org.springframework.social', name: 'spring-social-security', version: '1.1.6.RELEASE'
+//    compile group: 'com.github.weekens', name: 'spring-social-vkontakte', version: '1.1.3.M3'
+
+//    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+//    implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: '9.0.31'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.10'
+
+    //lombok for makes thing better
+    compileOnly 'org.projectlombok:lombok:1.18.12'
+    annotationProcessor 'org.projectlombok:lombok:1.18.12'
+
+    compile('javax.xml.bind:jaxb-api:2.3.0')
+    compile "org.javassist:javassist:3.25.0-GA"
+
+    //swager
+    compile "io.springfox:springfox-swagger2:2.9.2"
+    compile "io.springfox:springfox-swagger-ui:2.9.2"
+
+    //csv reading
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+
+    testImplementation 'org.spockframework:spock-core:2.0-M2-groovy-2.5'
+    testImplementation 'org.spockframework:spock-junit4:2.0-M2-groovy-2.5'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.2.6.RELEASE'
+    testImplementation 'org.springframework:spring-test'
+    testImplementation 'org.codehaus.groovy:groovy-all'
+    testImplementation 'org.spockframework:spock-spring:1.3-groovy-2.5'
+
+}
