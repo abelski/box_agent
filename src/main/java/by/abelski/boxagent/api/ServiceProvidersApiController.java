@@ -1,10 +1,10 @@
 package by.abelski.boxagent.api;
 
 
-import by.abelski.boxagent.api.dto.CalculationRq;
-import by.abelski.boxagent.api.dto.CalculationRs;
-import by.abelski.boxagent.api.dto.PlaceRq;
-import by.abelski.boxagent.api.dto.PlaceRs;
+import by.abelski.boxagent.api.dto.rq.CalculationRq;
+import by.abelski.boxagent.api.dto.rq.PlaceRq;
+import by.abelski.boxagent.api.dto.rs.CalculationRs;
+import by.abelski.boxagent.api.dto.rs.PlaceRs;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

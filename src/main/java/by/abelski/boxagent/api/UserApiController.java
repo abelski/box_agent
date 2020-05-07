@@ -1,8 +1,8 @@
 package by.abelski.boxagent.api;
 
 
-import by.abelski.boxagent.api.dto.CreatreUseRq;
-import by.abelski.boxagent.api.dto.UpdateRq;
+import by.abelski.boxagent.api.dto.rq.CreatreUseRq;
+import by.abelski.boxagent.api.dto.rq.UpdateRq;
 import by.abelski.boxagent.entities.User;
 import org.springframework.web.bind.annotation.*;
 

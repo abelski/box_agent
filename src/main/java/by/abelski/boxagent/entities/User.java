@@ -6,7 +6,6 @@ import java.util.HashSet;
 import java.util.Set;
 
 @Data
-
 public class User {
 
     private String id;
@@ -15,8 +14,10 @@ public class User {
 
     private String password;
 
+    private String phone;
 
-    private String passwordConfirm;
+    private String email;
+
 
     private Set<Role> roles = new HashSet<>();
 

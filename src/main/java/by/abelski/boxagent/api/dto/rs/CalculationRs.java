@@ -1,4 +1,4 @@
-package by.abelski.boxagent.api.dto;
+package by.abelski.boxagent.api.dto.rs;
 
 import lombok.Data;
 

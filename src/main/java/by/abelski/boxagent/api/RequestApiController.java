@@ -1,7 +1,7 @@
 package by.abelski.boxagent.api;
 
 
-import by.abelski.boxagent.api.dto.ChangeStatusRq;
+import by.abelski.boxagent.api.dto.rq.ChangeStatusRq;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
 
