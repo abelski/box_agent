@@ -27,7 +27,7 @@ public class UserApiController {
 
     }
 
-    @PutMapping
+    @PutMapping("/erasepass")
     public void erasePassword(@RequestBody EraseRq rq){
 
     }
