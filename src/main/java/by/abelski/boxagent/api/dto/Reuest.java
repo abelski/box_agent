@@ -1,12 +1,14 @@
-package by.abelski.boxagent.entities;
+package by.abelski.boxagent.api.dto;
 
+import by.abelski.boxagent.entities.PaymentType;
+import by.abelski.boxagent.entities.ServiceProviders;
 import lombok.Data;
 
 import java.util.Date;
-
 @Data
-public class Request {
+public class Reuest {
     private String id;
+
     private String what;
     private boolean isBigSizeBox;
     private Long estimatedCost;
@@ -24,5 +26,4 @@ public class Request {
 
     private Date cretionDate;
     private Date closeDate;
-
 }

@@ -1,6 +1,7 @@
 package by.abelski.boxagent.api;
 
 
+import by.abelski.boxagent.api.dto.Reuest;
 import by.abelski.boxagent.api.dto.rq.ChangeStatusRq;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.*;
@@ -12,7 +13,7 @@ import java.util.List;
 public class RequestApiController {
 
     @GetMapping
-    public List getActiveRequests() {
+    public List<Reuest> getActiveRequests() {
         return null;
     }
 

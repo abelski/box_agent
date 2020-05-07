@@ -2,7 +2,7 @@ package by.abelski.boxagent.api;
 
 
 import by.abelski.boxagent.api.dto.rq.CalculationRq;
-import by.abelski.boxagent.api.dto.rq.PlaceRq;
+import by.abelski.boxagent.api.dto.rq.PlaceRequestRq;
 import by.abelski.boxagent.api.dto.rs.CalculationRs;
 import by.abelski.boxagent.api.dto.rs.PlaceRs;
 import org.springframework.web.bind.annotation.*;
@@ -25,7 +25,7 @@ public class ServiceProvidersApiController {
     }
 
     @PostMapping
-    public PlaceRs place(@RequestBody PlaceRq rq){
+    public PlaceRs place(@RequestBody PlaceRequestRq rq){
         return new PlaceRs();
     }
 }

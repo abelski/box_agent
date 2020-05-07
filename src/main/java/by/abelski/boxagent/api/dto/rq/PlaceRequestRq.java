@@ -5,5 +5,5 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper=false)
-public class PlaceRq extends CalculationRq {
+public class PlaceRequestRq extends CalculationRq {
 }

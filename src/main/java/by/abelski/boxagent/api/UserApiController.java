@@ -2,6 +2,7 @@ package by.abelski.boxagent.api;
 
 
 import by.abelski.boxagent.api.dto.rq.CreatreUseRq;
+import by.abelski.boxagent.api.dto.rq.EraseRq;
 import by.abelski.boxagent.api.dto.rq.UpdateRq;
 import by.abelski.boxagent.entities.User;
 import org.springframework.web.bind.annotation.*;
@@ -23,6 +24,11 @@ public class UserApiController {
 
     @PutMapping
     public void update(@RequestBody UpdateRq rq){
+
+    }
+
+    @PutMapping
+    public void erasePassword(@RequestBody EraseRq rq){
 
     }
 }
