@@ -5,4 +5,5 @@ import java.util.List;
 
 public class Customer {
     private List<Place> myPlaces = new ArrayList<>();
+    private UserType userType;
 }

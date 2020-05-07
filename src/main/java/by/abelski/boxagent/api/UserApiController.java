@@ -1,7 +1,7 @@
 package by.abelski.boxagent.api;
 
 
-import by.abelski.boxagent.api.dto.rq.CreatreUseRq;
+import by.abelski.boxagent.api.dto.rq.CreatreUseeRq;
 import by.abelski.boxagent.api.dto.rq.EraseRq;
 import by.abelski.boxagent.api.dto.rq.UpdateRq;
 import by.abelski.boxagent.entities.User;
@@ -18,7 +18,7 @@ public class UserApiController {
     }
 
     @PostMapping()
-    public void register(@RequestBody CreatreUseRq rq){
+    public void register(@RequestBody CreatreUseeRq rq){
 
     }
 

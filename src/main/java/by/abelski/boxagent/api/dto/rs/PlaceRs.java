@@ -1,5 +1,8 @@
 package by.abelski.boxagent.api.dto.rs;
 
-public class PlaceRs {
+import lombok.Data;
 
+@Data
+public class PlaceRs {
+    String requestId;
 }
