@@ -10,6 +10,8 @@ public class CreatreUseeRq {
     UserType userType;
 
     private String username;
+    private String password;
+
     private String phone;
     private String email;
 

@@ -7,5 +7,7 @@ http://xn--e1ajsbm9c.xn--90ais/magazin.html
 https://www.dostavych.by/tarify
  */
 public enum ServiceProviders {
-    DOSTAVKA_BY, SAPEX_BY, DOSTAVYCH_BY
+    DOSTAVKA_BY,
+    SAPEX_BY,
+    DOSTAVYCH_BY
 }

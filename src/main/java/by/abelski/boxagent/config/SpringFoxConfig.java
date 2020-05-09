@@ -6,6 +6,8 @@ import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger.web.SecurityConfiguration;
+import springfox.documentation.swagger.web.SecurityConfigurationBuilder;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
@@ -17,6 +19,17 @@ public class SpringFoxConfig {
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("by.abelski.boxagent.api"))
                 .paths(PathSelectors.any())
+                .build()
+                
+//                .securitySchemes(Arrays.asList(securityScheme()))
+//                .securityContexts(Arrays.asList(securityContext()))
+                ;
+    }
+    @Bean
+    public SecurityConfiguration security() {
+        return SecurityConfigurationBuilder.builder()
+
+                .useBasicAuthenticationWithAccessCodeGrant(true)
                 .build();
     }
 }

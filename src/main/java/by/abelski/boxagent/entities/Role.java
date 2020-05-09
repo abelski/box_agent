@@ -1,7 +1,14 @@
 package by.abelski.boxagent.entities;
 
-public enum Role {
+import org.springframework.security.core.GrantedAuthority;
+
+public enum Role implements GrantedAuthority {
     ADMIN,
     CLIENT,
-    COURIER
+    COURIER;
+
+    @Override
+    public String getAuthority() {
+        return name();
+    }
 }
